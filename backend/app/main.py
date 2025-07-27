@@ -12,8 +12,8 @@ app = FastAPI(title="Smart Study Scheduler API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://simratsekhon16.github.io",
-        "http://localhost:3000"
+    "https://study-scheduler-frontend-xyz.onrender.com",  # Your frontend URL (you'll get this after deployment)
+    "http://localhost:3000"  # Keep for local development
     ],
     allow_credentials=True,
     allow_methods=["*"],
