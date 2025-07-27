@@ -1,5 +1,5 @@
 import os
-from database import database
+from databases import Database
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String, DateTime, Text
 from sqlalchemy.sql import func
 import asyncpg
@@ -8,7 +8,7 @@ import asyncpg
 DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:simratdatabase@localhost:5432/study_scheduler_db")
 
 # Create database instance
-database = database(DATABASE_URL)
+database = Database(DATABASE_URL)
 metadata = MetaData()
 
 # Define tables
