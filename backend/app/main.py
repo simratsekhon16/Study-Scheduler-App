@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from typing import List, Dict, Any
 import json
 import os
-from db_connection import database, schedules_table, completed_topics_table, create_tables, connect_db, disconnect_db
+from .db_connection import database, schedules_table, completed_topics_table, create_tables, connect_db, disconnect_db
 
 app = FastAPI(title="Smart Study Scheduler API")
 
