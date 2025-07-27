@@ -1,5 +1,5 @@
 import os
-from databases import Database
+from database import Database
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String, DateTime, Text
 from sqlalchemy.sql import func
 import asyncpg
